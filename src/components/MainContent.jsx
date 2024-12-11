@@ -33,7 +33,7 @@ export default function MainContent() {
         };
 
         fetchMemes();
-    });
+    }, []);
 
     function getNewMeme() {
         const randomMeme = allMeme[Math.floor(Math.random() * allMeme.length)];
